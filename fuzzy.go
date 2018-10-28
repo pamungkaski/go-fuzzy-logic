@@ -22,7 +22,7 @@ const(
 	MustNotBeMiddleLowDebt = 10000
 	MustBeMiddleLowDebt = 40000
 	MustBeMiddleHighDebt = 50000
-	MustNotBeMiddleHighDebt = 75000
+	MustNotBeMiddleHighDebt = 750005
 
 	MustNotBeHighDebt = 45000
 	MustBeHighDebt = 70000

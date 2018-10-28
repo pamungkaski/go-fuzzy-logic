@@ -1,3 +1,4 @@
+// Package fuzzy is a package that implement fuzzy logic to BLT decider.
 package fuzzy
 
 import "math"
@@ -34,18 +35,21 @@ const(
 	RejectedValue = 50
 )
 
+// Fuzzy is the main interface of a fuzzy logic algorithm
 type Fuzzy interface {
 	Fuzzification(number *FuzzyNumber) error
 	Defuzzification(number *FuzzyNumber) error
 	Inference(number *FuzzyNumber) error
 }
 
+// Family is the data needed for this programe.
 type Family struct {
 	Number string
 	Income float64
 	Debt float64
 }
 
+// FuzzyNumber is the struct thatwill continually holds any fuzzy data.
 type FuzzyNumber struct {
 	Family Family
 
@@ -61,7 +65,7 @@ type FuzzyNumber struct {
 
 type BLT struct {
 }
-
+// Inference is a function that change from raw linguistic into fuzzy linguistic.
 func (b *BLT) Inference(number *FuzzyNumber) error {
 	number.AccepetedInference = math.Max(math.Min(number.IncomeMembership[0], number.DebtMembership[2]), math.Min(number.IncomeMembership[0], number.DebtMembership[1]))
 	number.AccepetedInference = math.Max(number.AccepetedInference, math.Min(number.IncomeMembership[0], number.DebtMembership[0]))
@@ -75,6 +79,7 @@ func (b *BLT) Inference(number *FuzzyNumber) error {
 	return nil
 }
 
+// Defuzzification is a function that will transfer fuzzy linguistic to crisp data.
 func (b *BLT) Defuzzification(number *FuzzyNumber) error {
 	number.CrispValue = 0
 	number.CrispValue += number.AccepetedInference*AcceptedValue
@@ -85,6 +90,7 @@ func (b *BLT) Defuzzification(number *FuzzyNumber) error {
 	return nil
 }
 
+// Fuzzification is a function that will transfer crisp data into linguistic.
 func (b *BLT) Fuzzification(number *FuzzyNumber) error {
 	number.DebtMembership = append(number.DebtMembership, b.DebtLow(number.Family.Debt))
 	number.DebtMembership = append(number.DebtMembership, b.DebtMiddle(number.Family.Debt))

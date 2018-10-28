@@ -24,12 +24,11 @@ Income :
   2. Middle
   3. High
 
-Provokasi :
-  1. Low
+Debt  1. Low
   2. Middle
   3. High
 
-Hoax :
+BLT :
   1. Accepted
   2. Considered
   3. Rejected
@@ -64,6 +63,14 @@ I am using Linier function as the membership function.
 ![](https://image.ibb.co/dJVk3A/Screen-Shot-2018-10-28-at-16-25-29.png)
 
 Takagi-Sugeno Defuzzification Functions
+
+ci :
+
+```go
+    AcceptedValue = 100
+    ConsideredValue = 70
+    RejectedValue = 50
+````
 
 ## Result
 |  No  | Income    |    Debt   |        Result    | 

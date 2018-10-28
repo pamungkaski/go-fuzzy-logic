@@ -9,6 +9,14 @@ Fuzzy logic is an approach to computing based on `degrees of truth` rather than 
  
 >NB: The **bigger** the circle, the **bigger** the value
 
+## Fuzzy Rule
+
+| Income/Debt           | Low        | Middle        |  High  |
+| ----------- |:-------------:|:-------------:|:--------:|
+| Low      | Accepted | Accepted | Accepted |
+| Middle      | Considered | Considered | Considered |
+| High      | Considered | Rejected | Rejected |
+
 ## Fuzzy Input
 
 Income :
@@ -41,14 +49,6 @@ Hoax :
 ![](https://image.ibb.co/dJVk3A/Screen-Shot-2018-10-28-at-16-25-29.png)
 
 Takagi-Sugeno Defuzzification Functions
-
-## Fuzzy Rule
-
-| Income/Debt           | Low        | Middle        |  High  |
-| ----------- |:-------------:|:-------------:|:--------:|
-| Low      | Accepted | Accepted | Accepted |
-| Middle      | Considered | Considered | Considered |
-| High      | Considered | Rejected | Rejected |
 
 ## Result
 |  No  | Income    |    Debt   |        Result    | 

@@ -38,7 +38,12 @@ Hoax :
    
 ### Income
 ![](https://svgshare.com/i/94k.svg)
-
+**Low** :
+![](https://image.ibb.co/fEVVmV/Screen-Shot-2018-10-28-at-16-49-18.png)
+**Middle** :
+![](https://image.ibb.co/gjWQLq/Screen-Shot-2018-10-28-at-16-48-32.png)
+**High** :
+![](https://image.ibb.co/m2V7YA/Screen-Shot-2018-10-28-at-16-46-09.png)
 
 
 ### Debt

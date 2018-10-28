@@ -36,8 +36,12 @@ Hoax :
 
 ## Membership Function
    
+   
+I am using Linier function as the membership function.
+   
 ### Income
 ![](https://svgshare.com/i/94k.svg)
+
 **Low** :
 ![](https://image.ibb.co/fEVVmV/Screen-Shot-2018-10-28-at-16-49-18.png)
 **Middle** :
@@ -48,6 +52,12 @@ Hoax :
 
 ### Debt
 ![](https://svgshare.com/i/948.svg)
+**Low** :
+![](https://image.ibb.co/dGWvmV/Screen-Shot-2018-10-28-at-16-55-31.png)
+**Middle** :
+![](https://image.ibb.co/mhVALq/Screen-Shot-2018-10-28-at-16-59-40.png)
+**High** :
+![](https://image.ibb.co/g4xCYA/Screen-Shot-2018-10-28-at-16-56-13.png)
 
 
 ### Defuzification
